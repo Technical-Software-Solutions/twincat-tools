@@ -51,7 +51,7 @@ rLeftValue := rOutValue - TRUNC(rOutValue);
 rOutValue := DINT_TO_REAL(TRUNC(rOutValue));
 
 IF rLeftValue >= 0.5 THEN
-	rOutValue := rOutValue + 1
+	rOutValue := rOutValue + 1;
 ELSIF rLeftValue <= -0.5 THEN
 	rOutValue := rOutValue - 1;
 END_IF
